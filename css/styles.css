@@ -18,3 +18,41 @@ textarea {
     resize: none;
 }
 
+h1 {
+    /* Color: La couleur du texte */
+    color: rgb(18, 58, 180);
+    /* Text-align -> l'alignement du texte */
+    text-align: center;
+    /* Background-color -> couleur du fond */
+    background-color: rgb(180, 121, 18);
+    /* padding -> c'est la marge interieur de l'element */
+    padding: 10px;
+    /* Le text-decoration -> c'est le soulignage, le barrage etc du texte */
+    text-decoration: underline;
+}
+
+/* > permet de selectionner l'enfant direct de l'element #liste_cours */
+#liste_cours > li {
+    /* list_style: none permet la desactivation des puces */
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: solid 1px #6efafb;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #0091AD;
+}
+
+#liste_cours > li > a{
+    text-decoration: none;
+    color: #F7DD72;
+}
+
+#liste_cours > li:hover {
+    background-color: #FF57BB;
+}
+
+#liste_cours > li > a:hover{
+    color: #1E152A;
+}
