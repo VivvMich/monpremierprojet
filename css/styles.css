@@ -18,7 +18,7 @@ textarea {
     resize: none;
 }
 
-h1 {
+.titre_base {
     /* Color: La couleur du texte */
     color: rgb(18, 58, 180);
     /* Text-align -> l'alignement du texte */
@@ -28,6 +28,11 @@ h1 {
     /* padding -> c'est la marge interieur de l'element */
     padding: 10px;
     /* Le text-decoration -> c'est le soulignage, le barrage etc du texte */
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
     text-decoration: underline;
 }
 
@@ -55,4 +60,99 @@ h1 {
 
 #liste_cours > li > a:hover{
     color: #1E152A;
+}
+
+/*
+ _____ _____ _   _______  _____   _____  _____ _____ 
+/  __ \  _  | | | | ___ \/  ___| /  __ \/  ___/  ___|
+| /  \/ | | | | | | |_/ /\ `--.  | /  \/\ `--.\ `--. 
+| |   | | | | | | |    /  `--. \ | |     `--. \`--. \
+| \__/\ \_/ / |_| | |\ \ /\__/ / | \__/\/\__/ /\__/ /
+ \____/\___/ \___/\_| \_|\____/   \____/\____/\____/  
+ 
+ */
+
+
+ .green {
+    background-color: green;
+ }
+
+ .blue {
+    background-color: blue;
+ }
+
+ .orange {
+    background-color: orange;
+ }
+
+ .square {
+    width: 50px;
+    height: 50px;
+ }
+
+ .round {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+ }
+
+.text-color-red {
+    color: red;
+}    
+
+/* Si on met une div en inline, sachant que l'inline ne gère pas la hauteur ni la largeur, on ne la verra pas, l'inline est utilisé principalement pour du texte */
+.cobaye {
+    display: inline;
+}
+             
+/* L'inline block autorise la hauteur et la largeur, permet aussi d'accumuler les éléments sur la longueur et de passer à la ligne quand l'élément n'a plus de place. */
+.cobaye2 {
+    display: inline-block;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.nav-bar {
+    background-color:darkslateblue;
+    width: 100%;
+    height: 10vh;
+    /* Permet au texte à l'interieur de la div d'être centré verticalement, mettre la même hauteur que la hauteur de la div */
+    line-height: 10vh;
+}
+
+.nav-bar-list > li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.nav-bar-list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar-list > li > a:hover {
+    color: orange;
+}
+
+.parent > p {
+    color: green;
+}
+
+.all-children-parent p {
+    color: red
+}
+
+h4 + p {
+    /* Attention le H4 est en gras par defaut */
+    /* Pour mettre en gras */
+    font-weight: bold;
+    color: blue;
+}
+
+h5 ~ p {
+    font-weight: bold;
+    color: orangered;
 }
