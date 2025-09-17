@@ -251,3 +251,156 @@ p ~ span {
     content: "(important)";
     font-size: 0.5rem;
 }
+
+/* 
+ ______  _       ______ __   __
+|  ____|| |     |  ____|\ \ / /
+| |__   | |     | |__    \ V / 
+|  __|  | |     |  __|    > <  
+| |     | |____ | |____  / . \ 
+|_|     |______||______|/_/ \_\ 
+*/
+
+.container-flex {
+    /* C'est toujours le conteneur des éléments qui a le display flex */
+    /* Par defaut les éléments dans le conteneur seront alignés horizontalement. */
+    display: flex;
+    background-color: aquamarine;
+    height: 30vh;
+}
+
+.box-flex {
+    height: 20%;
+    /* Pour eviter de calculer la largeur, on utilise une mise à l'echelle */
+    /* width: calc(30vh * 0.2); */
+    aspect-ratio: 1/1;
+    background-color: chocolate;
+}
+
+.box-flex-col {
+    width: 6vh;
+    aspect-ratio: 1/1;
+    background-color: crimson;
+
+}
+
+.col {
+    flex-direction: column;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-stretch{
+    align-items: stretch;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+/* Exercice */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 200px;
+    background-color: #fff;
+    border: 2px dashed #ccc;
+    padding: 1rem;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+
+  .f-box {
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  /* Couleurs */
+  .red { background-color: #e74c3c; }
+  .blue { background-color: #3498db; }
+  .green { background-color: #2ecc71; }
+  .orange { background-color: #f39c12; }
+  .purple { background-color: #9b59b6; }
+  .teal { background-color: #1abc9c; }
+  .pink { background-color: #ff6b81; }
+  .brown { background-color: #8e44ad; }
+  .gray { background-color: #7f8c8d; }
+
+  /* Combinaisons d'exemples */
+  .direction-row {
+    flex-direction: row;
+  }
+
+  .direction-column {
+    flex-direction: column;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .justify-around {
+    justify-content: space-around;
+  }
+
+  .align-start {
+    align-items: flex-start;
+  }
+
+  .align-center {
+    align-items: center;
+  }
+
+  .align-end {
+    align-items: flex-end;
+  }
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
+                               
